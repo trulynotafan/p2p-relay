@@ -1,0 +1,14 @@
+{
+  "name": "p2p-relay",
+  "version": "1.0.0",
+  "description": "DHT relay server for Hyperswarm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "hyperdht": "^6.12.8",
+    "@hyperswarm/dht-relay": "^0.4.3",
+    "ws": "^8.18.1"
+  }
+}
