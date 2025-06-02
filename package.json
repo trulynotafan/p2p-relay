@@ -4,14 +4,19 @@
   "description": "DHT relay server for Hyperswarm",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "patch-package"
   },
   "engines": {
-  "node": ">=18"
-},
+    "node": ">=18"
+  },
   "dependencies": {
-    "hyperdht": "^6.12.8",
     "@hyperswarm/dht-relay": "^0.4.3",
+    "hyperdht": "^6.12.8",
     "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0"
   }
 }
